@@ -3,9 +3,9 @@ class SessionsController < ApplicationController
   def index
     if session[:name]
       @name = session[:name]
-    else 
+    else
       @name = "please log in"
-    end  
+    end
   end
 
   def new
