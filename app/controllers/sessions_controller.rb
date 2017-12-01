@@ -1,5 +1,11 @@
 class SessionsController < ApplicationController
 
+  def index
+    if session[:name]
+      @name = session[:name]
+    end
+  end
+
   def new
   end
 
